@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="auther" content=" Andrew Studio">
+	<meta name="description" content=" Andrew Studio is a Professional Photography and Multimedia Company driven by the desire to deliver great value and service to its clients. Our approach to delivering our mandate is tailored to meet and exceed the specific needs and expectations of our clients by providing them with global industry standard products and services. We understand the direct and indirect impact of the images we create on the way our clients and their brands are perceived, and as such, we drive to go the extra mile to deliver quality and creative images to ensure that our clients successfully achieve their set objectives">
+	<meta name="keywords" content="photography, studio, picture">
+	<title>Portfolio | Checkout</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="image/jpg" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">		
+</head>
+<body onload="get_cart()">
+	
+<nav style="top: 0;">
+	<div class="container">
+		<div class="logo">CJStudio</div>
+		<ul>
+			<li class="cart1"><a href="cart.html"><i class="fa fa-shopping-cart"></i><span class="count1" id="count1">0</span></a></li>
+			<li><a href="#"><span onclick="slideNav()">&#9776;</span></a></li>
+		</ul>
+	</div>
+</nav>
+<nav class="proof">
+	<div class="container">
+		<div class="logo">CJStudio</div>
+		<ul>
+			<li class="cart1"><a href="cart.html"><i class="fa fa-shopping-cart"></i><span class="count1" id="count2">0</span></a></li>
+			<li><a href="#"><span onclick="slideNav()">&#9776;</span></a></li>
+		</ul>
+	</div>
+</nav>
+<div class="menu1" id="menu1" onclick="closeNav()"></div>
+<ul id="menu" class="nav">
+	<span id="span" onclick="closeNav()">&times;</span>
+	<li>
+		<a href="index.html">
+			<h1>Home</h1>
+			<p>Beginning of site</p>
+		</a>
+	</li>
+	<li>
+		<a href="gallary.html">
+			<h1>Gallery</h1>
+			<p>My latest works</p>
+		</a>
+	</li>
+	<li>
+		<a href="photoproof.html">
+			<h1>Photo Proofing</h1>
+			<p>For Client Approval</p>
+		</a>
+	</li>
+	<li>
+		<a href="about.html">
+			<h1>About</h1>
+			<p>Who I am</p>
+		</a>
+	</li>
+	<li>
+		<a href="blog.html">
+			<h1>Blog</h1>
+			<p>New ideas</p>
+		</a>
+	</li>
+	<li>
+		<a href="contact.html">
+			<h1>Contact</h1>
+			<p>Get in touch</p>
+		</a>
+	</li>
+	<li>
+		<a href="shop.html">
+			<h1>Shop</h1>
+			<p>Photography store</p>
+		</a>
+	</li>
+</ul>
+<div class="header">
+	<h1 class="head">Checkout</h1>
+</div>
+<div class="container">
+	<div class="alert">
+		<i class="fa"></i>
+		<p>Returning customer? click here tot login</p>
+	</div>
+	<div class="alert">
+		<i class="fa"></i>
+		<p>Have a coupon? Click here to enter your code</p>
+	</div>
+	<h1 class="checkout">Billing details</h1>
+	<form class="checkout">
+		<div class="left">
+			<div class="group">
+				<label for="firstname">FIRST NAME</label>
+				<input type="text" name="firstname">
+			</div>
+			<div class="group">
+				<label for="lastname">LAST NAME</label>
+				<input type="text" name="lastname">
+			</div>	
+			<label for="company">COMPANY NAME (OPTIONAL)</label>
+			<input type="test" name="company">
+			<label for="country">COUNTRY</label>
+			<select>
+				<option>Nigeria</option>
+				<option>Ghana</option>
+				<option>USA</option>
+			</select>
+			<label for="street">STREET ADDRESS</label>
+			<input type="text" name="street" placeholder="House number and street name">
+			<input type="text" name="street" placeholder="Apartment, suit, unit etc. (optional)">
+			<label for="city">TOWN / CITY</label>
+			<input type="text" name="city">
+			<label for="state">STATE / COUNTRY</label>
+			<select>
+				<option>Abia</option>
+				<option>Anambra</option>
+				<option>Enugu</option>
+			</select>
+			<label for="zip">POSTCODE / ZIP</label>
+			<input type="text" name="zip">
+			<label for="phone">PHONE</label>
+			<input type="text" name="phone">
+			<label for="email">EMAIL ADDRESS</label>
+			<input type="email" name="email">
+			<input type="checkbox" name="account"><label for="account">CREATE AN ACCOUNT?</label>
+			<label for="password">CREATE ACCOUNT PASSWORD *</label>
+			<input type="password" name="password">
+		</div>
+		<div class="right">
+			<h1 class="checkout" >Additional information</h1>
+			<label for="order">ORDER NOTES (OPTIONAL)</label>
+			<textarea placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+		</div><div style="clear: both;"></div>
+	</form>
+	<h1 class="checkout">Your order</h1>
+	<table border="1" class="first" style="margin-top: 20px;">
+		<thead>
+			<tr>
+				<th>Product</th>
+				<th>Total</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>Subtotal</td>
+			<td>$95</td>
+		</tr>
+		<tr>
+			<td>Total</td>
+			<td>$95</td>
+		</tr>
+	</table>
+	<form name="payment" class="payment">
+		<div class="payment1">
+			<input type="radio" name="pay" id="direct" checked onclick="pay_type()">
+			<label for="direct">DIRECT BANK TRANSFER</label>
+			<div class="item1" id="item1">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</div>
+		</div>
+		<div class="payment1">
+			<input type="radio" name="pay" id="check" onclick="pay_type()">
+			<label for="check">CHECK PAYMENTS</label>
+			<div class="item2" id="item2">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</div>
+		</div>
+		<div class="payment1">
+			<input type="radio" name="pay" id="cash" onclick="pay_type()">
+			<label for="cash">CASH ON DELIVERY</label>
+			<div class="item3" id="item3">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</div>
+		</div>
+		<button>PLACE ORDER</button><div style="clear: both;"></div>
+	</form>
+	<footer>
+		<div class="links">
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-flickr"></i></a>
+			<a href="#"><i class="fa fa-vimeo"></i></a>
+			<a href="#"><i class="fa fa-instagram"></i></a>
+		</div>
+		<p>&copy;  Copyright Grand Portfolio Theme Demo - Theme by ThemeGoods</p>
+	</footer>
+</div>
+
+<div class="topbtn">TOP</div>
+<script src="js/jquery.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

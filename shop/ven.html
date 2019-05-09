@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="auther" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<title>Portfolio | Blog</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="icon" type="image/jpg" href="../images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.css">		
+</head>
+<body>
+	
+<nav style="top: 0;">
+	<div class="container">
+		<div class="logo">CJStudio</div>
+		<ul>
+			<li class="cart1"><a href="../cart.html"><i class="fa fa-shopping-cart"></i><span class="count1" id="count1">0</span></a></li>
+			<li><a href="#"><span onclick="slideNav()">&#9776;</span></a></li>
+		</ul>
+	</div>
+</nav>
+<nav class="proof">
+	<div class="container">
+		<div class="logo">CJStudio</div>
+		<ul>
+			<li class="cart1"><a href="../cart.html"><i class="fa fa-shopping-cart"></i><span class="count1">0</span></a></li>
+			<li><a href="#"><span onclick="slideNav()">&#9776;</span></a></li>
+		</ul>
+	</div>
+</nav>
+<div class="menu1" id="menu1" onclick="closeNav()"></div>
+<ul id="menu" class="nav">
+	<span id="span" onclick="closeNav()">&times;</span>
+	<li>
+		<a href="../index.html">
+			<h1>Home</h1>
+			<p>Beginning of site</p>
+		</a>
+	</li>
+	<li>
+		<a href="../happy.html">
+			<h1>Gallery</h1>
+			<p>My latest works</p>
+		</a>
+	</li>
+	<li>
+		<a href="../photoproof.html">
+			<h1>Photo Proofing</h1>
+			<p>For Client Approval</p>
+		</a>
+	</li>
+	<li>
+		<a href="../about.html">
+			<h1>About</h1>
+			<p>Who I am</p>
+		</a>
+	</li>
+	<li>
+		<a href="../blog.html">
+			<h1>Blog</h1>
+			<p>New ideas</p>
+		</a>
+	</li>
+	<li>
+		<a href="../contact.html">
+			<h1>Contact</h1>
+			<p>Get in touch</p>
+		</a>
+	</li>
+	<li>
+		<a href="../shop.html">
+			<h1>Shop</h1>
+			<p>Photography store</p>
+		</a>
+	</li>
+</ul>
+<div class="header"></div>
+<div class="container">
+	<div class="images">
+		<img src="../images/img3.jpg">
+	</div>
+	<div class="description">
+		<h1 id="itemName">Ven Time</h1>
+		<span id="itemPrice">39.00</span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<form>
+			<input type="number" name="quantity" value="1" style="width: 40px;" id="itemQty">
+			<input type="submit" name="cart" value="ADD TO CART" onclick="add_to_cart('itemName', '/images/img3.jpg', 'itemPrice', 'itemQty')">
+		</form>
+		<div class="meta">
+			Cartegories: <span>Amazing & Fun, Life Photography, Nature, Portrait</span><br>
+			Tag: <span onclick="add_to_cart('itemName', 'images/img4.jpg', 'itemPrice', 'itemQty')">travel</span>
+		</div>
+	</div>	
+	<div class="tabs">
+		<button class="links" onclick="openTab(event, 'description')">Description</button>
+		<button class="links" onclick="openTab(event, 'reviews')">Reviews(0)</button>
+	</div>
+	<div class="tabcontent" id="description">
+		<h1>Description</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat</p>
+	</div>
+	<div class="tabcontent" id="reviews">
+		<h1>Reviews</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="related">
+		<div class="products">
+			<a href="#">
+				<img src="../images/img4.jpg">
+				<p>Relax Time</p>
+				<div class="cost">$29.00</div>
+				<div class="cart">
+					<i class="fa fa-shopping-cart"></i>
+					ADD TO CART
+				</div>
+			</a>
+		</div>
+		<div class="products">
+			<a href="#">
+				<img src="../images/img4.jpg">
+				<p>Relax Time</p>
+				<div class="cost">$29.00</div>
+				<div class="cart">
+					<i class="fa fa-shopping-cart"></i>
+					ADD TO CART
+				</div>
+			</a>
+		</div>
+		<div class="products">
+			<a href="#">
+				<img src="../images/img4.jpg">
+				<p>Relax Time</p>
+				<div class="cost">$29.00</div>
+				<div class="cart">
+					<i class="fa fa-shopping-cart"></i>
+					ADD TO CART
+				</div>
+			</a>
+		</div>
+	</div>
+	<footer>
+		<div class="links">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-flickr"></i>
+			<i class="fa fa-vimeo"></i>
+			<i class="fa fa-instagram"></i>
+		</div>
+		<p>&copy;  Copyright Grand Portfolio Theme Demo - Theme by ThemeGoods</p>
+	</footer>
+</div>
+
+<div class="topbtn">TOP</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>
